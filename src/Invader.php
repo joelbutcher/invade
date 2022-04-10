@@ -31,6 +31,8 @@ class Invader
         $property->setAccessible(true);
 
         $property->setValue($this->obj, $value);
+
+        return $this;
     }
 
     public function __call(string $name, array $params = []): mixed
